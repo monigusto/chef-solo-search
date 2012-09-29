@@ -67,7 +67,7 @@ if Chef::Config[:solo]
             bags = search_data_bag(_query, obj, start, rows, &block)
             _result += bags
           end
-          
+
 
           if block_given?
             pos = 0
@@ -118,3 +118,4 @@ if Chef::Config[:solo]
     end
   end
 end
+
